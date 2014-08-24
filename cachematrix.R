@@ -1,5 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These functions are used to calculate the inverse of an invertible matrix
+## If the previous use of the functions was to calculate the same inverse, it
+## will retrieve a cached version rather than recalculating the inverse.
 
 ## makeCahceMatrix takes one argument, x, a matrix. It creates a special list
 ## object that allows access to the set, get, setInv, and getInv functions. It 
@@ -32,7 +33,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve takes arguments x and ...; it retunrs the inverse of x
+## If the inverse has already been calcuated and stored with makeCacheMatrix
+## it will return the cached value.
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
