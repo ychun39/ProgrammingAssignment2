@@ -1,7 +1,10 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
+## makeCahceMatrix takes one argument, x, a matrix. It creates a special list
+## object that allows access to the set, get, setInv, and getInv functions. It 
+## serves as a cache stince it stores the inverse of a matrix for the cacheSolve
+## function below.
 
 makeCacheMatrix <- function(x = matrix()) {
     I <- NULL
